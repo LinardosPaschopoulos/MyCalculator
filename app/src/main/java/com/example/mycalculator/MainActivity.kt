@@ -19,16 +19,16 @@ class MainActivity : AppCompatActivity() {
         var equalPressed = false
         changeMode()
 
-        binding.button1.setOnClickListener {printOnScreen("1", true); equalPressed = false}
-        binding.button2.setOnClickListener {printOnScreen("2", true); equalPressed = false}
-        binding.button3.setOnClickListener {printOnScreen("3", true); equalPressed = false}
-        binding.button4.setOnClickListener {printOnScreen("4", true); equalPressed = false}
-        binding.button5.setOnClickListener {printOnScreen("5", true); equalPressed = false}
-        binding.button6.setOnClickListener {printOnScreen("6", true); equalPressed = false}
-        binding.button7.setOnClickListener {printOnScreen("7", true); equalPressed = false}
-        binding.button8.setOnClickListener {printOnScreen("8", true); equalPressed = false}
-        binding.button9.setOnClickListener {printOnScreen("9", true); equalPressed = false}
-        binding.button0.setOnClickListener {printOnScreen("0", true); equalPressed = false}
+        binding.button1.setOnClickListener {printOnScreen("1"); equalPressed = false}
+        binding.button2.setOnClickListener {printOnScreen("2"); equalPressed = false}
+        binding.button3.setOnClickListener {printOnScreen("3"); equalPressed = false}
+        binding.button4.setOnClickListener {printOnScreen("4"); equalPressed = false}
+        binding.button5.setOnClickListener {printOnScreen("5"); equalPressed = false}
+        binding.button6.setOnClickListener {printOnScreen("6"); equalPressed = false}
+        binding.button7.setOnClickListener {printOnScreen("7"); equalPressed = false}
+        binding.button8.setOnClickListener {printOnScreen("8"); equalPressed = false}
+        binding.button9.setOnClickListener {printOnScreen("9"); equalPressed = false}
+        binding.button0.setOnClickListener {printOnScreen("0"); equalPressed = false}
         binding.buttonDot.setOnClickListener {
             var lastChar = '$'
 
@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() {
             }
 
             if(lastOperator != '.' && lastChar != '+' && lastChar != '-' && lastChar != '*' && lastChar != '/' && lastChar != '.' && lastChar != '$') {
-                printOnScreen(".", true)
+                printOnScreen(".")
                 lastOperator = '.'
                 equalPressed = false
             }
@@ -50,7 +50,7 @@ class MainActivity : AppCompatActivity() {
             }
 
             if(lastChar != '.' && lastChar!= '+' && lastChar != '-' && lastChar != '*' && lastChar != '/' && lastChar != '.' && lastChar != '$') {
-                printOnScreen("+", true)
+                printOnScreen("+")
                 lastOperator = '+'
                 equalPressed = false
             }
@@ -63,7 +63,7 @@ class MainActivity : AppCompatActivity() {
             }
 
             if(lastChar != '.' && lastChar!= '+' && lastChar != '-' && lastChar != '*' && lastChar != '/' && lastChar != '.' && lastChar != '$') {
-                printOnScreen("-", true)
+                printOnScreen("-")
                 lastOperator = '-'
                 equalPressed = false
             }
@@ -76,7 +76,7 @@ class MainActivity : AppCompatActivity() {
             }
 
             if(lastChar != '.' && lastChar!= '+' && lastChar != '-' && lastChar != '*' && lastChar != '/' && lastChar != '.' && lastChar != '$') {
-                printOnScreen("*", true)
+                printOnScreen("*")
                 lastOperator = '*'
                 equalPressed = false
             }
@@ -89,7 +89,7 @@ class MainActivity : AppCompatActivity() {
             }
 
             if(lastChar != '.' && lastChar!= '+' && lastChar != '-' && lastChar != '*' && lastChar != '/' && lastChar != '.' && lastChar != '$') {
-                printOnScreen("/", true)
+                printOnScreen("/")
                 lastOperator = '/'
                 equalPressed = false
             }
@@ -97,7 +97,7 @@ class MainActivity : AppCompatActivity() {
         binding.buttonAC.setOnClickListener {
             binding.calculatorResult.text = null
             binding.calculatorTypeArea.text = null
-            var lastOperator = ' '
+            lastOperator = ' '
             equalPressed = false
         }
         binding.buttonDelete.setOnClickListener {
@@ -108,6 +108,7 @@ class MainActivity : AppCompatActivity() {
                     lastOperator = ' '
                 }
 
+                equalPressed = false
                 binding.calculatorTypeArea.text = screenText.delete(screenText.length - 1, screenText.length)
             }
 
@@ -137,20 +138,13 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    fun printOnScreen(resultPrint: String, clearScreen: Boolean) {
+    private fun printOnScreen(resultPrint: String) {
         if(binding.calculatorResult.text.isNotEmpty()) {
             binding.calculatorTypeArea.text .append("")
         }
 
-        if(clearScreen) {
-            binding.calculatorResult.text.append("")
-            binding.calculatorTypeArea.append(resultPrint)
-        }
-        else {
-            binding.calculatorTypeArea.append(binding.calculatorResult.text)
-            binding.calculatorTypeArea.append(resultPrint)
-            binding.calculatorResult.text.append("")
-        }
+        binding.calculatorResult.text.append("")
+        binding.calculatorTypeArea.append(resultPrint)
     }
 
     private fun changeMode() {
