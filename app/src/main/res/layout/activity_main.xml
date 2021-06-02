@@ -38,7 +38,7 @@
 
     <TableLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content" >
 
         <TableRow
             android:layout_width="match_parent"
@@ -47,8 +47,9 @@
             <Button
                 android:id="@+id/button_AC"
                 style="?android:attr/borderlessButtonStyle"
+                android:textSize="20sp"
                 android:layout_width="60dp"
-                android:layout_height="30pt"
+                android:layout_height="70dp"
                 android:layout_weight="1"
                 android:background="@color/anthracite"
                 android:text="@string/ac"
@@ -57,8 +58,9 @@
             <Button
                 android:id="@+id/button_Delete"
                 style="?android:attr/borderlessButtonStyle"
+                android:textSize="20sp"
                 android:layout_width="30pt"
-                android:layout_height="30pt"
+                android:layout_height="70dp"
                 android:layout_weight="1"
                 android:background="@color/anthracite"
                 android:text="@string/del"
@@ -67,8 +69,9 @@
             <Button
                 android:id="@+id/button_plus"
                 style="?android:attr/borderlessButtonStyle"
+                android:textSize="20sp"
                 android:layout_width="30pt"
-                android:layout_height="30pt"
+                android:layout_height="70dp"
                 android:layout_weight="0.37"
                 android:background="@color/anthracite"
                 android:text="@string/Plus"
@@ -83,8 +86,9 @@
             <Button
                 android:id="@+id/button_7"
                 style="?android:attr/borderlessButtonStyle"
+                android:textSize="20sp"
                 android:layout_width="30pt"
-                android:layout_height="30pt"
+                android:layout_height="70dp"
                 android:layout_weight="1"
                 android:background="@color/anthracite"
                 android:text="@string/_7"
@@ -93,8 +97,9 @@
             <Button
                 android:id="@+id/button_8"
                 style="?android:attr/borderlessButtonStyle"
+                android:textSize="20sp"
                 android:layout_width="30pt"
-                android:layout_height="30pt"
+                android:layout_height="70dp"
                 android:layout_weight="1"
                 android:background="@color/anthracite"
                 android:text="@string/_8"
@@ -103,8 +108,9 @@
             <Button
                 android:id="@+id/button_9"
                 style="?android:attr/borderlessButtonStyle"
+                android:textSize="20sp"
                 android:layout_width="30pt"
-                android:layout_height="30pt"
+                android:layout_height="70dp"
                 android:layout_weight="1"
                 android:background="@color/anthracite"
                 android:text="@string/_9"
@@ -113,8 +119,9 @@
             <Button
                 android:id="@+id/button_minus"
                 style="?android:attr/borderlessButtonStyle"
+                android:textSize="20sp"
                 android:layout_width="30pt"
-                android:layout_height="30pt"
+                android:layout_height="70dp"
                 android:layout_weight="1"
                 android:background="@color/anthracite"
                 android:text="@string/Minus"
@@ -129,8 +136,9 @@
             <Button
                 android:id="@+id/button_4"
                 style="?android:attr/borderlessButtonStyle"
+                android:textSize="20sp"
                 android:layout_width="30pt"
-                android:layout_height="30pt"
+                android:layout_height="70dp"
                 android:layout_weight="1"
                 android:background="@color/anthracite"
                 android:text="@string/_4"
@@ -139,8 +147,9 @@
             <Button
                 android:id="@+id/button_5"
                 style="?android:attr/borderlessButtonStyle"
+                android:textSize="20sp"
                 android:layout_width="30pt"
-                android:layout_height="30pt"
+                android:layout_height="70dp"
                 android:layout_weight="1"
                 android:background="@color/anthracite"
                 android:text="@string/_5"
@@ -149,8 +158,9 @@
             <Button
                 android:id="@+id/button_6"
                 style="?android:attr/borderlessButtonStyle"
+                android:textSize="20sp"
                 android:layout_width="30pt"
-                android:layout_height="30pt"
+                android:layout_height="70dp"
                 android:layout_weight="1"
                 android:background="@color/anthracite"
                 android:text="@string/_6"
@@ -159,8 +169,9 @@
             <Button
                 android:id="@+id/button_multiply"
                 style="?android:attr/borderlessButtonStyle"
+                android:textSize="20sp"
                 android:layout_width="30pt"
-                android:layout_height="30pt"
+                android:layout_height="70dp"
                 android:layout_weight="1"
                 android:background="@color/anthracite"
                 android:text="@string/Multiply"
@@ -175,8 +186,9 @@
             <Button
                 android:id="@+id/button_1"
                 style="?android:attr/borderlessButtonStyle"
+                android:textSize="20sp"
                 android:layout_width="30pt"
-                android:layout_height="30pt"
+                android:layout_height="70dp"
                 android:layout_weight="1"
                 android:background="@color/anthracite"
                 android:text="@string/_1"
@@ -185,8 +197,9 @@
             <Button
                 android:id="@+id/button_2"
                 style="?android:attr/borderlessButtonStyle"
+                android:textSize="20sp"
                 android:layout_width="30pt"
-                android:layout_height="30pt"
+                android:layout_height="70dp"
                 android:layout_weight="1"
                 android:background="@color/anthracite"
                 android:text="@string/_2"
@@ -195,8 +208,9 @@
             <Button
                 android:id="@+id/button_3"
                 style="?android:attr/borderlessButtonStyle"
+                android:textSize="20sp"
                 android:layout_width="30pt"
-                android:layout_height="30pt"
+                android:layout_height="70dp"
                 android:layout_weight="1"
                 android:background="@color/anthracite"
                 android:text="@string/_3"
@@ -205,8 +219,9 @@
             <Button
                 android:id="@+id/button_divide"
                 style="?android:attr/borderlessButtonStyle"
+                android:textSize="20sp"
                 android:layout_width="30pt"
-                android:layout_height="30pt"
+                android:layout_height="70dp"
                 android:layout_weight="1"
                 android:background="@color/anthracite"
                 android:text="@string/Divide"
@@ -220,17 +235,19 @@
             <Button
                 android:id="@+id/button_mode"
                 style="?android:attr/borderlessButtonStyle"
+                android:textSize="20sp"
                 android:layout_width="30pt"
-                android:layout_height="30pt"
+                android:layout_height="70dp"
                 android:layout_weight="1"
                 android:background="@color/anthracite"
-                android:text="@string/CurrencyConverter"/>
+                android:text="@string/CurrencyConverter" />
 
             <Button
                 android:id="@+id/button_0"
                 style="?android:attr/borderlessButtonStyle"
+                android:textSize="20sp"
                 android:layout_width="30pt"
-                android:layout_height="30pt"
+                android:layout_height="70dp"
                 android:layout_weight="1"
                 android:background="@color/anthracite"
                 android:text="@string/_0"
@@ -239,8 +256,9 @@
             <Button
                 android:id="@+id/button_dot"
                 style="?android:attr/borderlessButtonStyle"
+                android:textSize="20sp"
                 android:layout_width="30pt"
-                android:layout_height="30pt"
+                android:layout_height="70dp"
                 android:layout_weight="1"
                 android:background="@color/anthracite"
                 android:text="@string/Dot"
@@ -249,8 +267,9 @@
             <Button
                 android:id="@+id/button_equal"
                 style="?android:attr/borderlessButtonStyle"
+                android:textSize="20sp"
                 android:layout_width="30pt"
-                android:layout_height="30pt"
+                android:layout_height="70dp"
                 android:layout_weight="1"
                 android:background="@color/anthracite"
                 android:text="@string/Equal"
